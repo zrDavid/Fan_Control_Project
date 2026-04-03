@@ -1,0 +1,17 @@
+{
+  "name": "hvac-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wite",
+    "build": "wite build",
+    "preview": "wite preview"
+  },
+  "devDependencies": {
+    "wite": "^4.5.0"
+  },
+  "dependencies": {
+    "three": "^0.183.2"
+  }
+}

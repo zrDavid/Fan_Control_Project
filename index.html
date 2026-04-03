@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>HVAC 3D Dashboard</title>
+    <style>
+        body { margin: 0; background: #2f2f2f; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <div id="ui-layer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10;">
+        
+        <div style="position: absolute; top: 20px; left: 20px; pointer-events: auto; font-family: sans-serif;">
+            <h1 style="color: white; margin: 0; font-size: 18px;">FAN MONITOR v1.0</h1>
+            <button id="alarmBtn" style="padding: 10px 20px; cursor: pointer; background: #444; color: white; border: 1px solid #666; margin-top: 10px;">
+                START TEST
+            </button>
+        </div>
+
+        <div id="temp-label" style="position: absolute; color: #0000ff; font-family: monospace; font-weight: bold; background: rgba(0,0,0,0.5); padding: 5px; border-radius: 4px;">
+            TEMP: --.-°C
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
