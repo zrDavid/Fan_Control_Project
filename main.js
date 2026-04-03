@@ -24,10 +24,22 @@ controls.enableDamping = true;
 scene.add(new THREE.GridHelper(10, 10, 0x555555, 0x333333));
 
 // 3. LIGHTING (Cranked up to ensure Blender models aren't black)
-scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+
 const dirLight = new THREE.DirectionalLight(0xffffff, 1.0);
-dirLight.position.set(-5, 2, 5);
+dirLight.position.set(5, 5, 5);
 scene.add(dirLight);
+
+// Adding more lights to improve colors which were dark
+// Fill Light: Softer source from Top-Left-Front
+const fillLight = new THREE.DirectionalLight(0xffffff, 0.5);
+fillLight.position.set(-5, 5, 5);
+scene.add(fillLight);
+
+// Back Light: Highlights the edges from behind
+const backLight = new THREE.DirectionalLight(0xffffff, 0.2);
+backLight.position.set(0, 5, -5);
+scene.add(backLight);
 
 // 4. THE LOADER
 const loader = new GLTFLoader();
