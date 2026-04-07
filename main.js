@@ -45,7 +45,7 @@ scene.add(backLight);
 const loader = new GLTFLoader();
 console.log("Starting loader...");
 
-loader.load('/blades_4.glb', (gltf) => {
+loader.load('./blades_4.glb', (gltf) => {
     sensorModel = gltf.scene;
     // getting only the blades
     fanBlades = sensorModel.getObjectByName('BladeCore');
