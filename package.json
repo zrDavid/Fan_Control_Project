@@ -9,6 +9,7 @@
     "preview": "wite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "wite": "^4.5.0"
   },
   "dependencies": {
