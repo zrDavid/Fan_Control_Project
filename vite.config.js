@@ -1,4 +1,4 @@
 // vite.config.js
 export default {
-  base: '/fan_control_project/',
+  base: '/Fan_Control_Project/',
 }
