@@ -1,4 +1,7 @@
 // vite.config.js
 export default {
-  base: '/Fan_Control_Project/',
+  // This created issues when loading the project
+  //base: '/Fan_Control_Project/',
+
+  base: './',
 }
